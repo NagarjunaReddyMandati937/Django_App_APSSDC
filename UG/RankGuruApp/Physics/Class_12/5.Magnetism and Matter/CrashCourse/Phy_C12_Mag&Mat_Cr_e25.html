@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  ></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/bootstrap.min.css">
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+  <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/jquery.js"></script>
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/app+css.css" rel="stylesheet">
+  <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript.js"></script>
+  <title>T&D - The Real Time Exam App</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+  <style>
+
+   body{
+     font-family: 'Roboto', sans-serif; 
+     background-color:#00000000;
+     margin-top:6px;
+     padding-bottom:0px!important;
+     color:#232729;
+     margin-left:-25px;
+   }
+   .MathJax_Display, /* MathJax 2 */
+   mjx-container     /* MathJax 3 */
+   { 
+    text-align: left!important;  
+    text-rendering:geometricPrecision;
+    //padding-top:5px!important; 
+    //padding-bottom:5px!important;
+    font-size:19px!important;
+    font-family:bold!important;
+    // border-spacing:-111px!important;
+    // matchFontHeight: line-height: 1.15;
+    //line-height:inherit;
+    line-box:1!important;
+  }
+
+  mjx-container:focus { 
+    outline: none !important;
+    //line-height:1px!important;
+    line-box:1!important;
+  }
+  mjx-container[jax="CHTML"][display="true"] {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+    margin-top: 0.25em!important;
+    margin-right: 0px;
+    margin-bottom: 0.25em!important;
+    margin-left: 0px;
+    color:#232729!important;
+    font-weight:bold!important;
+  }
+  p{
+   //line-height:-55px;
+   display:inline-block;
+ }
+ 
+ 
+</style>
+</head>
+<body>
+  <div class="container" id="bodyid">
+
+    <ul>
+
+      <img onclick="image(this)" class="img-fluid" src="https://tanddev.s3.ap-south-1.amazonaws.com/rankguruapp/gallery/image_1600495566.jpeg"><br><br>
+
+      <p style="display: inline">We use a standard right handed coordinate system
+      </p>   <p>\[ \left( {r,\phi ,z} \right)
+      \] </p><br>
+      <p style="display: inline">Since the current is entirely axial, the Boit-savart law implies that
+      </p><p>\[ {B_z} = 0
+      \] </p>
+      <p style="display: inline">every where </p>
+      <p style="display: inline">Symmetry consideration require that the  </p>
+      <p>\[ r
+      \] </p>
+      <p style="display: inline"> and </p>   <p>\[ \phi \] </p>
+      <p style="display: inline"> components of </p><p>\[ B \] </p><br>
+      <p style="display: inline"> depends
+      upon </p><p>\[ r:B={ B_{ r } }\left( r \right) \hat { r } +{ B_{ \phi  } }\left( r \right) \hat { \phi  } \] </p><br>
+      <p style="display: inline">Now apply Gauss's law for magnetic field to the coaxial cylindrical surface </p>
+      <p>\[ S \] </p>
+      <p style="display: inline">, which has length </p><p>\[ l \] </p><p style="display: inline"> and radius
+      </p><p>\[ r \] </p><br>
+      <p>\[ 0 = \int_S {B.da = {B_r}\left( r \right)2\pi rl} \] </p><br>
+      <p style="display: inline">Therefore,</p>
+      <p>\[ {B_r}\left( r \right) = 0 \] </p><br>
+      <p style="display: inline">Amper's law to coaxial circular path
+      </p><p>\[ C \] </p><br>
+      <p>\[ \oint_c {B.dI = 2\pi r{B_\phi }\left( r \right) = {\mu _0}i\left( r \right)} \]</p>
+      <p>\[........(1) \] </p><br>
+      <p style="display: inline">Here </p><p>\[ i(r) \] </p>
+      <p style="display: inline"> is the current passing through the surface enclosed by 
+      </p><p>\[ C \] </p><br>
+      <p style="display: inline">Since, the current density is uniform we have,
+      </p><p>\[ \begin{array}{l} \frac { { i\left( r \right)  } }{ i } =\frac { { \pi { r^{ 2 } } } }{ { \pi { a^{ 2 } } } }  \\ i\left( r \right) =\frac { { { r^{ 2 } }i } }{ { { a^{ 2 } } } }  \end{array} \] </p><br>
+      <p>\[  \] </p><br>
+      <p style="display: inline">Equation </p><p>\[ 1 \] </p>
+      <p style="display: inline"> and </p><p>\[ 2nd \] </p>
+      <p style="display: inline">implies that </p>
+      <p>\[ {B_\phi }\left( r \right) = \frac{{{\mu _0}ir}}{{\left( {2\pi {a^2}} \right)}} \] </p><br>
+      <p style="display: inline">Now integrate the magnetic energy density over the volume of the wire. The
+      magnetic energy </p><p>\[ d{U_m} \] </p>
+
+      <p style="display: inline">contained in the cylindrical shell of length </p><p>\[ 1 \] </p>
+      <p style="display: inline">, inner
+      radius </p><p>\[ r \] </p>
+      <p style="display: inline"> and outer radius </p><p>\[ r+dr \] </p>
+      <p style="display: inline"> is </p>
+      <p>\[ \begin{array}{l} d{ U_{ m } }={ \in _{ m } }UV=\frac { { { B_{ \phi  } }^{ 2 }\left( r \right)  } }{ { 2{ \mu _{ 0 } } } } 2\pi r1dr \\ =\frac { { { \mu _{ 0 } }{ i^{ 2 } }1 } }{ { 4\pi { a^{ 4 } } } } { r^{ 3 } }dr \end{array} \] </p><br>
+      <p style="display: inline">Hence, the magnetic energy per unit length contained in the wire is
+      </p><br>
+      <p>\[ \frac{{{U_m}}}{1} = \frac{1}{1}\int {d{U_m} = \frac{{{\mu _0}{i^2}}}{{4\pi {a^4}}}\int_0^a {{r^3}dr = \frac{{{\mu _0}{r^2}}}{{4\pi {a^4}}}\left( {\frac{{{r^4}}}{4}|_0^a} \right)} } \] </p><br>
+      <p style="display: inline">Hence, Option B is the correct answer.
+      </p>
+
+    </ul>
+  </div> 
+</body>
+<script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript1.js"></script>
+</html>

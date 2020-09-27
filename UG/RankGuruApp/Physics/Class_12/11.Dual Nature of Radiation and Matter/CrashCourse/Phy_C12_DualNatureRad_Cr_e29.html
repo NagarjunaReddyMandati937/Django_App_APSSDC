@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  ></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/bootstrap.min.css">
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+  <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/jquery.js"></script>
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/app+css.css" rel="stylesheet">
+  <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript.js"></script>
+  <title>T&D - The Real Time Exam App</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+  <style>
+
+   body{
+     font-family: 'Roboto', sans-serif; 
+     background-color:#00000000;
+     margin-top:6px;
+     padding-bottom:0px!important;
+     color:#232729;
+     margin-left:-25px;
+   }
+   .MathJax_Display, /* MathJax 2 */
+   mjx-container     /* MathJax 3 */
+   { 
+    text-align: left!important;  
+    text-rendering:geometricPrecision;
+    //padding-top:5px!important; 
+    //padding-bottom:5px!important;
+    font-size:19px!important;
+    font-family:bold!important;
+    // border-spacing:-111px!important;
+    // matchFontHeight: line-height: 1.15;
+    //line-height:inherit;
+    line-box:1!important;
+  }
+
+  mjx-container:focus { 
+    outline: none !important;
+    //line-height:1px!important;
+    line-box:1!important;
+  }
+  mjx-container[jax="CHTML"][display="true"] {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+    margin-top: 0.25em!important;
+    margin-right: 0px;
+    margin-bottom: 0.25em!important;
+    margin-left: 0px;
+    color:#232729!important;
+    font-weight:bold!important;
+  }
+  p{
+   //line-height:-55px;
+   display:inline-block;
+ }
+ 
+ 
+</style>
+</head>
+<body>
+  <div class="container" id="bodyid">
+
+    <ul> 
+
+      <p style="display: inline">We have,</p><br>
+      <p>\[ 2 d sin \theta = n \lambda
+      \] </p><br>
+      <p style="display: inline">Angle of incidence = </p><p>\[ 90 - i \] </p><br>
+      <p style="display: inline">Given </p>
+
+      <p>\[ i = 30^o d = 1 \times 10^{-10} m,   \] </p><br>
+      <p>\[ h = 6.6 \times 10^{-34}, m = 9.1 \times
+      10^{-31} \] </p><br><p style="display: inline"> and </p>
+      <p>\[ , e = 1.6 \times 10^{-19} \] </p><br>
+      <p style="display: inline">Also </p><p>\[ n = 1 \] </p><p style="display: inline"> for </p>
+
+      <p>\[ 1^{st} \] </p> <p style="display: inline"> order diffraction.</p><br>
+      <p style="display: inline">Therefore,
+      </p><br>
+      <p>\[ 2 \times 1 \times 10^{-10} sin(90-30) = 1 \times \lambda
+      \] </p>
+      <p>\[ \implies \lambda = 2 \times 10^{-10} \dfrac {\sqrt {3}}{2} \]</p><br>
+        <p>\[= \sqrt {3} \times
+      10^ {-10}m \] </p>
+      <p style="display: inline">We have de-Broglie wavelength,
+      </p><br>
+      <p>\[ \lambda = \dfrac {h}{mv}
+      \] </p>
+      <p style="display: inline">and also
+      </p>
+      <p>\[ \dfrac {1}{2} mv^2 = eV \implies v = \sqrt{ \dfrac{2eV}{m}}
+      \] </p><br>
+      <p style="display: inline">Substituting in de-Broglie wavength, we get,
+      </p><br>
+      <p>\[ \lambda = \dfrac {h} { \sqrt {2meV} } \sqrt {3} \times 10^{-10}
+      \] </p><br>
+      <p>\[ \implies V = 49.86 V
+      \] </p>
+      
+    </ul>
+  </div> 
+</body>
+<script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript1.js"></script>
+</html>

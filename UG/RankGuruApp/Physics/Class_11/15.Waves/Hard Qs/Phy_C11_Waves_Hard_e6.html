@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  ></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/bootstrap.min.css">
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+  <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/jquery.js"></script>
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/app+css.css" rel="stylesheet">
+  <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript.js"></script>
+  <title>T&D - The Real Time Exam App</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+  <style>
+
+   body{
+     font-family: 'Roboto', sans-serif; 
+     background-color:#00000000;
+     margin-top:6px;
+     padding-bottom:0px!important;
+     color:#232729;
+     margin-left:-25px;
+   }
+   .MathJax_Display, /* MathJax 2 */
+   mjx-container     /* MathJax 3 */
+   { 
+    text-align: left!important;  
+    text-rendering:geometricPrecision;
+    //padding-top:5px!important; 
+    //padding-bottom:5px!important;
+    font-size:19px!important;
+    font-family:bold!important;
+    // border-spacing:-111px!important;
+    // matchFontHeight: line-height: 1.15;
+    //line-height:inherit;
+    line-box:1!important;
+  }
+
+  mjx-container:focus { 
+    outline: none !important;
+    //line-height:1px!important;
+    line-box:1!important;
+  }
+  mjx-container[jax="CHTML"][display="true"] {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+    margin-top: 0.25em!important;
+    margin-right: 0px;
+    margin-bottom: 0.25em!important;
+    margin-left: 0px;
+    color:#232729!important;
+    font-weight:bold!important;
+  }
+  p{
+   //line-height:-55px;
+   display:inline-block;
+ }
+ 
+ 
+</style>
+</head>
+<body>
+  <div class="container" id="bodyid">
+
+    <ul>
+
+      <p style="display: inline">Case I : In air
+      </p><br>
+      <p style="display: inline">Fundamental frequency,
+      </p>   <p>\[ f = \dfrac{1}{2L}\sqrt{\dfrac{T}{M}}  \] </p><br>
+      <p>\[ = \dfrac{1}{2L}\sqrt{\dfrac{p Vg}{M}} \] </p><br>
+      <p style="display: inline">Where, 
+      </p><p>\[ T\rightarrow \] </p>
+      <p style="display: inline"> Tension in air </p><br>
+      <p>\[ V \rightarrow \] </p><p style="display: inline"> Volume</p><br>
+      <p>\[ p \rightarrow \] </p><p style="display: inline"> Specific gravity
+      </p>   <br>
+      <p>\[ g \rightarrow \] </p><p style="display: inline"> Gravitational acceleration
+      </p><br>
+      <p>\[ M \rightarrow \] </p><p style="display: inline"> Linear density
+      </p><br>
+      <p style="display: inline">Case II: Immersed in water to half of the volume</p><br>
+      <p style="display: inline">New Tension,
+      </p><p>\[ T' = T - \text{upthrust force} \] </p><br>
+      <p>\[ \Rightarrow T' = T - \dfrac{V}{2}\rho g \] </p><br>
+      <p>\[ \Rightarrow T' = Vpg - \dfrac{V}{2}g \] </p>&nbsp;&nbsp;&nbsp;&nbsp;
+      <p>\[ [\rho_{water} = 1\space g/cc] \] </p><br>
+      <p>\[ \Rightarrow T' = Vg(p - \dfrac{1}{2}) \] </p><br>
+      <p style="display: inline">New fundamental frequency,
+      </p><p>\[ f' = \dfrac{1}{2L}\sqrt{\dfrac{T'}{M}}  \] </p><br>
+      
+      <p>\[ = \dfrac{1}{2L}\sqrt{\dfrac{Vg(p - \dfrac{1}{2})}{M}} \] </p><br>
+      <p>\[ \therefore \dfrac{f'}{f} = \dfrac{\dfrac{1}{2L}\sqrt{\dfrac{Vg(p - \dfrac{1}{2})}{M}}}{\dfrac{1}{2L}\sqrt{\dfrac{Vpg}{M}}} \] </p><br>
+      <p>\[ \Rightarrow \dfrac{f'}{300} = \dfrac{1}{2L}\sqrt{\dfrac{Vg(p - \dfrac{1}{2})}{M}}\times \sqrt{\dfrac{M}{Vpg}} \] </p><br>
+      <p>\[ \Rightarrow f' = 300(\dfrac{p - \dfrac{1}{2}}{p}) \] </p><br>
+      <p>\[ \Rightarrow f' = 300(\dfrac{2p - 1}{2p}) \] </p>
+      
+      
+    </ul>
+  </div> 
+</body>
+<script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript1.js"></script>
+</html>

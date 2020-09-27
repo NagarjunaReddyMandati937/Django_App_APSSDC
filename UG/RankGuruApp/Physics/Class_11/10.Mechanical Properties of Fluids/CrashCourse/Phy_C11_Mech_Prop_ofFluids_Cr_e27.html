@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  ></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/bootstrap.min.css">
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+  <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/jquery.js"></script>
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/app+css.css" rel="stylesheet">
+  <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript.js"></script>
+  <title>T&D - The Real Time Exam App</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+  <style>
+
+   body{
+     font-family: 'Roboto', sans-serif; 
+     background-color:#00000000;
+     margin-top:6px;
+     padding-bottom:0px!important;
+     color:#232729;
+     margin-left:-25px;
+   }
+   .MathJax_Display, /* MathJax 2 */
+   mjx-container     /* MathJax 3 */
+   { 
+    text-align: left!important;  
+    text-rendering:geometricPrecision;
+    //padding-top:5px!important; 
+    //padding-bottom:5px!important;
+    font-size:19px!important;
+    font-family:bold!important;
+    // border-spacing:-111px!important;
+    // matchFontHeight: line-height: 1.15;
+    //line-height:inherit;
+    line-box:1!important;
+  }
+
+  mjx-container:focus { 
+    outline: none !important;
+    //line-height:1px!important;
+    line-box:1!important;
+  }
+  mjx-container[jax="CHTML"][display="true"] {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+    margin-top: 0.25em!important;
+    margin-right: 0px;
+    margin-bottom: 0.25em!important;
+    margin-left: 0px;
+    color:#232729!important;
+    font-weight:bold!important;
+  }
+  p{
+   //line-height:-55px;
+   display:inline-block;
+ }
+ 
+ 
+</style>
+</head>
+<body>
+  <div class="container" id="bodyid">
+
+    <ul>
+
+     <img onclick="image(this)" class="img-fluid" src="https://tanddev.s3.ap-south-1.amazonaws.com/rankguruapp/gallery/image_1599278883.jpeg"><br><br>
+
+     <p style="display: inline">Let us find the pressure at the lowest point 1. Since the liquid has density 
+     </p><p>\[ \rho_2 \] </p>  <p style="display: inline"> and height </p>   <p>\[ h'_2 \] </p>
+
+     <p style="display: inline"> on the right hand side of point 1, we have </p><br>      <p>\[ P_1 = \rho_1 g h_1 .......(1) \] </p>
+     <br>
+     <p style="display: inline">Since two liquid columns of height </p> <p>\[ h_1 \ and \ h_2 \] </p><p style="display: inline"> and densities </p><p>\[ \rho_1 \ and \ \rho_2 \] </p><p style="display: inline"> are
+     situated above point 1, on the left-hand side, we have</p>
+   </p>
+
+   <p>\[ P_2 = \rho_1 g h_2 + \rho_2 g h'_2......(2) \] </p>
+   <p style="display: inline">Equating  
+   </p><p>\[ P_1 and P_2 \] </p> <p style="display: inline">, we get</p>
+   <p>\[ \rho_1 h_2 + \rho_2 h'_2 = \rho_1 h_1 \] </p><br>
+   <p style="display: inline">Substituting</p>
+   <br>
+   <p>\[ h'_2 = R sin\theta +R cos \theta, \ h_2  \] </p><br>
+   <p>\[ = R(1 - cos \theta) \ and \ h_1 = R (1 - sin \theta) \] </p><br>
+   <p>\[ \rho_1 R (1 - cos \theta) + \rho_2 R (sin \theta + cos\theta)  \] </p><br>
+   <p>\[ = \rho_1R (1 - sin \theta) \] </p><br>
+   <p style="display: inline">This gives
+   </p><br>
+   <p>\[ tan \theta = \dfrac{\rho_1 - \rho_2}{\rho_1 + \rho_2} \] </p>
+
+
+ </ul>
+</div> 
+</body>
+<script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript1.js"></script>
+</html>

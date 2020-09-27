@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  ></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/bootstrap.min.css">
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+  <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/jquery.js"></script>
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/app+css.css" rel="stylesheet">
+  <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript.js"></script>
+  <title>T&D - The Real Time Exam App</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+  <style>
+
+   body{
+     font-family: 'Roboto', sans-serif; 
+     background-color:#00000000;
+     margin-top:6px;
+     padding-bottom:0px!important;
+     color:#232729;
+     margin-left:-25px;
+   }
+   .MathJax_Display, /* MathJax 2 */
+   mjx-container     /* MathJax 3 */
+   { 
+    text-align: left!important;  
+    text-rendering:geometricPrecision;
+    //padding-top:5px!important; 
+    //padding-bottom:5px!important;
+    font-size:19px!important;
+    font-family:bold!important;
+    // border-spacing:-111px!important;
+    // matchFontHeight: line-height: 1.15;
+    //line-height:inherit;
+    line-box:1!important;
+  }
+
+  mjx-container:focus { 
+    outline: none !important;
+    //line-height:1px!important;
+    line-box:1!important;
+  }
+  mjx-container[jax="CHTML"][display="true"] {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+    margin-top: 0.25em!important;
+    margin-right: 0px;
+    margin-bottom: 0.25em!important;
+    margin-left: 0px;
+    color:#232729!important;
+    font-weight:bold!important;
+  }
+  p{
+   //line-height:-55px;
+   display:inline-block;
+ }
+ 
+ 
+</style>
+</head>
+<body>
+  <div class="container" id="bodyid">
+
+    <ul>
+
+     <p style="display: inline">Terminal velocity of ball when falling in liquid is given by
+     </p><br>
+     <p>\[ (\rho_{b}-\rho_{l})Vg=6\pi\eta rv \] </p><p style="display: inline">...eq(1)
+     </p><br>
+     <p style="display: inline">1. case
+     </p><br><br>
+     <p style="display: inline">when ball falling in tank of water of density ,
+     </p>   <p>\[ \rho_{water}=1gcm^{-3} \] </p><br>
+     <p>\[ \rho_{ball}=7.8gcm^{-3}  \] </p>
+     <p>\[ \eta_{water}=8.5\times10^{-4}Pa.s \] </p><br>
+     <p style="display: inline">and terminal velocity
+     </p>    
+     <p>\[ v=10cms^{-1} \] </p><br>
+     <p style="display: inline">Put all the above value in eq(1)
+     </p>   
+     <br>
+     <p>\[ \Rightarrow (7.8-1)Vg\]</p><br>
+     <p>\[=6\pi\times8.5\times10^{-4}r\times10 \] </p>
+     <p style="display: inline">...eq(2)
+     </p><br>
+     <p style="display: inline">2. case
+     </p>   <br><br>
+     <p style="display: inline">when ball falling in tank of glycerin
+     </p><p>\[ \rho_{ball}=7.8gcm^{-3} \] </p>
+     <p>\[ \eta_{glycerin}=13.2Pa.s \] </p><br>
+     <p style="display: inline">and terminal velocity
+     </p>   <p>\[ v_{1} \] </p><br>
+     <p style="display: inline">put all the value in eq(1)
+     </p> <br><p>\[ \Rightarrow (7.8-1.2)Vg\]
+       <p>\[=6\pi\times13.2r\times v_{1} \] </p>
+       <p style="display: inline">...eq(3)
+       </p>   <br>
+       <p style="display: inline">divide eq(3) b eq(1)
+       </p><br><p>\[ \dfrac{7.8-1.2}{7.8-1}=\dfrac{13.2\times v_{1}}{8.5\times10^{-4}\times10} \] </p>
+       <p>\[ \Rightarrow v_{1}=\dfrac{6.6\times8.510^{-4}\times10}{6.8\times13.2}\]</p><br>
+       <p>\[=6.25\times10^{-4}cms^{-1} \] </p><br>
+       <p style="display: inline">terminal velocity of ball in glycerin is
+       </p>   <p>\[ 6.25\times10^{-4}cms^{-1} \] </p><br> 
+       <p style="display: inline"><b>Hence C option is correct.</b>
+       </p>
+
+
+     </ul>
+   </div> 
+ </body>
+ <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript1.js"></script>
+ </html>

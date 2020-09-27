@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  ></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/bootstrap.min.css">
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+  <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/jquery.js"></script>
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/app+css.css" rel="stylesheet">
+  <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript.js"></script>
+  <title>T&D - The Real Time Exam App</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+  <style>
+
+   body{
+     font-family: 'Roboto', sans-serif; 
+     background-color:#00000000;
+     margin-top:6px;
+     padding-bottom:0px!important;
+     color:#232729;
+     margin-left:-25px;
+   }
+   .MathJax_Display, /* MathJax 2 */
+   mjx-container     /* MathJax 3 */
+   { 
+    text-align: left!important;  
+    text-rendering:geometricPrecision;
+    //padding-top:5px!important; 
+    //padding-bottom:5px!important;
+    font-size:19px!important;
+    font-family:bold!important;
+    // border-spacing:-111px!important;
+    // matchFontHeight: line-height: 1.15;
+    //line-height:inherit;
+    line-box:1!important;
+  }
+
+  mjx-container:focus { 
+    outline: none !important;
+    //line-height:1px!important;
+    line-box:1!important;
+  }
+  mjx-container[jax="CHTML"][display="true"] {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+    margin-top: 0.25em!important;
+    margin-right: 0px;
+    margin-bottom: 0.25em!important;
+    margin-left: 0px;
+    color:#232729!important;
+    font-weight:bold!important;
+  }
+  p{
+   //line-height:-55px;
+   display:inline-block;
+ }
+ 
+ 
+</style>
+</head>
+<body>
+  <div class="container" id="bodyid">
+
+    <ul>
+
+
+      <p style="display: inline">The spring is compressed by y therefore the force on masses is 
+      </p><p>\[ F = Ky \] </p><br>
+      <p style="display: inline">Let 
+      </p>  <p>\[ m_1 \] </p> 
+      <p style="display: inline"> traveled distance a and mass </p><p>\[ m_2 \] </p>
+      <p style="display: inline"> be </p><br>
+      <p style="display: inline">therefore</p><br>
+      <p>\[ F = ma \] </p><br>
+      <p>\[ F(t) = - m_1 \dfrac{da(t)^2}{dt^2} \] </p><br>
+      <p style="display: inline">Similarly for second mass
+      </p>   <br>
+      <p>\[ -F(t) = m_2\dfrac{db(t)^2}{dt^2} \] </p><br>
+      <p style="display: inline">Now Assuming simple harmonic motion 
+      </p><p>\[ a(t) =Asin  \omega t \] </p>
+      <p style="display: inline"> and </p><p>\[ b(t) = B sin \omega t \] </p>
+      <p style="display: inline"> as the spring force is equal for both masses
+      </p><br>
+      <p>\[ m_1a = m_2b \] </p><br>
+      <p>\[ m_1 A sin \omega t = m_2 B sin \omega t \] </p><br>
+      <p>\[ m_1 A = m_2 B \] </p><br>
+      <p style="display: inline">As long as the above amplitude equation will hold center of mass wont
+      </p><br>
+      <p style="display: inline">move</p>
+      <p style="display: inline">Eq for center of mass is
+      </p><br>
+      <p>\[ 0 =\dfrac{-Bm_2 + Am_1}{m_1+m_2} \] </p><br>
+      <p style="display: inline;">We know
+      </p><p>\[ A+B = y \] </p><br>
+      <p>\[ m_1A = m_2(y-A) \] </p><br>
+      <p>\[ A = \dfrac{m_2y}{m_1+m_2} \] </p>
+      
+    </ul>
+  </div> 
+</body>
+<script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript1.js"></script>
+</html>

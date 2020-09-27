@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+  ></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/bootstrap.min.css">
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+  <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/jquery.js"></script>
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/app+css.css" rel="stylesheet">
+  <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript.js"></script>
+  <title>T&D - The Real Time Exam App</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+  <style>
+
+   body{
+     font-family: 'Roboto', sans-serif; 
+     background-color:#00000000;
+     margin-top:6px;
+     padding-bottom:0px!important;
+     color:#232729;
+     margin-left:-25px;
+   }
+   .MathJax_Display, /* MathJax 2 */
+   mjx-container     /* MathJax 3 */
+   { 
+    text-align: left!important;  
+    text-rendering:geometricPrecision;
+    //padding-top:5px!important; 
+    //padding-bottom:5px!important;
+    font-size:19px!important;
+    font-family:bold!important;
+    // border-spacing:-111px!important;
+    // matchFontHeight: line-height: 1.15;
+    //line-height:inherit;
+    line-box:1!important;
+  }
+
+  mjx-container:focus { 
+    outline: none !important;
+    //line-height:1px!important;
+    line-box:1!important;
+  }
+  mjx-container[jax="CHTML"][display="true"] {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+    margin-top: 0.25em!important;
+    margin-right: 0px;
+    margin-bottom: 0.25em!important;
+    margin-left: 0px;
+    color:#232729!important;
+    font-weight:bold!important;
+  }
+  p{
+   //line-height:-55px;
+   display:inline-block;
+ }
+ 
+ 
+</style>
+</head>
+<body>
+  <div class="container" id="bodyid">
+
+    <ul>
+
+      <p style="display: inline">given position vector of particle at time
+      </P> <p>\[ t \]</p><br>
+      <p>\[ \vec{r}=\left\{(2t)i+(2t^{2})j\right\}(m) \]</p><br>
+      <p>\[ x=2t \]</p><br>
+      <p>\[ \Rightarrow V_{x}=\dfrac{dx}{dt}=2 \]</p><br>
+      <p>\[ y=2t^{2} \]</p><br>
+      <p>\[ \Rightarrow V_{y}=\dfrac{dy}{dt}=4t \]</p><br>
+      <p>\[ \tan\theta=\dfrac{V_{y}}{V_{x}} \]</p><br>
+      <p>\[ \Rightarrow \dfrac{4t}{2}=2t \]</p><br>
+      <p style="display: inline">By differentiating with respect to time
+      </P><br>
+      
+      <p>\[ \dfrac{d}{dt}(\tan\theta)=\dfrac{d}{dt}(2t) \]</p><br>
+      <p>\[ \Rightarrow (\sec^{2}\theta)\dfrac{d\theta}{dt}=2 \]</p><br>
+      <p>\[ \Rightarrow (1+\tan^{2}\theta)\dfrac{d\theta}{dt}=2 \]</p><br>
+      <p style="display: inline">as we know from above 
+      </P><p>\[ \tan\theta=2t \]</p><br>
+      <p>\[ \Rightarrow (1+4t^{2})\dfrac{d\theta}{dt}=2 \]</p><br>
+      <p>\[ \Rightarrow \dfrac{d\theta}{dt}=\dfrac{2}{1+4t^{2}} \]</p><br>
+      <p style="display: inline">At</P>
+        <p>\[ t=2\sec \]</p><br>
+        <p>\[ \Rightarrow \dfrac{d\theta}{dt}=\dfrac{2}{1+4\times 4}\]</p><br>
+        <p>\[=\dfrac{2}{17}\ rad/s \]</p>
+
+      </ul>
+    </div> 
+  </body>
+  <script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript1.js"></script>
+  </html>

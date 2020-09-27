@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<script
+	id="MathJax-script"
+	async
+	src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+	></script>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/bootstrap.min.css">
+	<link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+	<script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/jquery.js"></script>
+	<link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/app+css.css" rel="stylesheet">
+	<script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript.js"></script>
+	<title>T&D - The Real Time Exam App</title>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<link href="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/font.css" rel="stylesheet">
+	<style>
+
+		body{
+			font-family: 'Roboto', sans-serif; 
+			background-color:#00000000;
+			margin-top:6px;
+			padding-bottom:0px!important;
+			color:#232729;
+			margin-left:-25px;
+		}
+		.MathJax_Display, /* MathJax 2 */
+		mjx-container     /* MathJax 3 */
+		{ 
+			text-align: left!important;  
+			text-rendering:geometricPrecision;
+			//padding-top:5px!important; 
+			//padding-bottom:5px!important;
+			font-size:19px!important;
+			font-family:bold!important;
+			// border-spacing:-111px!important;
+			// matchFontHeight: line-height: 1.15;
+			//line-height:inherit;
+			line-box:1!important;
+		}
+
+		mjx-container:focus { 
+			outline: none !important;
+			//line-height:1px!important;
+			line-box:1!important;
+		}
+		mjx-container[jax="CHTML"][display="true"] {
+			display: block;
+			text-align: center;
+			margin: 1em 0;
+			margin-top: 0.25em!important;
+			margin-right: 0px;
+			margin-bottom: 0.25em!important;
+			margin-left: 0px;
+			color:#232729!important;
+			font-weight:bold!important;
+		}
+		p{
+			//line-height:-55px;
+			display:inline-block;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container" id="bodyid">
+		<ul>
+			<img onclick="image(this)" class="img-fluid" src="https://tanddev.s3.ap-south-1.amazonaws.com/tndupsc/gallery/image_1597322057.jpeg"><br><br>
+			<p style="display: inline;">\(C_{12} = \dfrac{C_1 C_2}{C_1 + C_2} \)</p><br><br>
+			<p>\(= \dfrac{\dfrac{k_1 \in_0 \dfrac{L}{2} \times L}{d/2}. \dfrac{k_2 \left[\in_0 \dfrac{L}{2} \times L\right]}{d/2}}{(k_1 + K_2) \left[\dfrac{\in_0. \dfrac{L}{2} \times L}{d/2} \right]}\)<p><br><br>
+			<p style="display: inline;">\(C_{12} = \dfrac{k_1 k_2}{k_1 + k_2} \dfrac{\in_0 L^2}{d}\)</p><br><br>
+			<p style="display: inline;">\(C_{34} = \dfrac{k_3 k_4}{k_3 + k_4} \dfrac{\in_0 L^2}{d}\)</p><br><br>
+			<p style="display: inline;">\(\therefore C_{eq} = C_{12} + C_{34} \)</p><br><br>
+			<p>\(= \left[\dfrac{k_1 k_2}{k_1 + k_2} + \dfrac{k_3 k_4}{k_3 + k_4} \right] \dfrac{\in_0 L^2}{d}\)</p><br><br>
+			<p style="display: inline;">Now If \(k_{eq} - k, \, C_{eq} = \dfrac{k \, \in_0 L^2}{d}\)</p><br><br>
+			<p style="display: inline;">On comparing equation (i) to equation (ii) , we get
+			</p><br><br>
+			<p style="display: inline;">\(k_{eq} = \dfrac{k_1 k_2 (k_3 + k_4) + k_3 K_4 (k_1 + k_2)}{(k_1 + k_2) (k_3 + k_4)}\)</p><br><br>
+			<p style="display: inline;">This does not match with any of the options so
+				probably they have assumed the wrong combination
+			</p><br><br>
+			<p style="display: inline;">\(C_{13} = \dfrac{k_1 \in_0 L \dfrac{L}{2}}{d/2} + k_3 \in_0 \dfrac{L.\dfrac{L}{2}}{d/2}\)</p><br><br>
+			<p style="display: inline;">\(= (k_1 + k_3) \dfrac{\in_0 L^2}{d}\)</p><br><br>
+			<p style="display: inline;">\(C_{24} = (k_2 + k_4) \dfrac{\in_0 L^2}{d}\)</p><br><br>
+			<p style="display: inline;">\(C_{eq} = \dfrac{C_{13} C_{24}}{C_{13} C_{24}} = \dfrac{(K_1 + K_3) (k_2 + k_4)}{(k_1 + k_2 + k_3 + k_4)} \dfrac{\in_0 L^2}{d}\)</p><br><br>
+			<p>\(C_{eq} = \dfrac{(K_1 + K_3) (k_2 + k_4)}{(k_1 + k_2 + k_3 + k_4)} \dfrac{\in_0 L^2}{d}\)</p><br><br>
+			<p style="display: inline;">\(= \dfrac{k \in_0 L^2}{d}\)</p><br><br>
+			<p style="display: inline;">\(k = \dfrac{(k_1 + k_3) (k_2 + k_4)}{(k_1 + k_2 + k_3 + k_4)}\)</p>
+		</ul>
+
+
+
+
+	</div> 
+</body>
+<script src="https://tanddev.s3.ap-south-1.amazonaws.com/appfiles/myscript1.js"></script>
+</html>
