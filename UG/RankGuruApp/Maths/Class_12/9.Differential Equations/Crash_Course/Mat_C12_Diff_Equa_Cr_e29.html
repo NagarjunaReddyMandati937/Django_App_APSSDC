@@ -75,27 +75,53 @@
 
     <ul>
 
-     <p style="display: inline"></p>   
-     <p style="display: inline"></p>
-     <p style="display: inline"></p><br>
-     <p style="display: inline"></p>
-     <p style="display: inline"></p>   
-     <p style="display: inline"></p>
-     <p style="display: inline"></p><br>
+     <p style="display: inline">The given differential equation is,
+     </p><br><br>
 
+     <p>\[ \left(1+e^{\dfrac{x}{y}}\right)dx+e^{\dfrac{x}{y}}\left(1-\dfrac{x}{y}\right)dy=0
+     \] </p><br>
+     <p>\[ \Rightarrow \dfrac{dx}{dy}=\dfrac{e^{\dfrac{x}{y}}\left(\dfrac{x}{y}-1\right)}
+     {1+e^{\dfrac{x}{y}}} \] </p><p style="display: inline">------- ( 1 )</p><br><br>
+     <p>\[ \Rightarrow \] </p><p style="display: inline">Let </p>
+     <p>\[  x=vy \] </p><br>
+     <p>\[ \Rightarrow \dfrac{dx}{dy}=v+y\dfrac{dv}{dy}
+     \] </p><br>
+     <p>\[ v+y\dfrac{dv}{dy}=\dfrac{e^v(v-1)}{1+e^v}
+     \] </p><br>
+     <p>\[ \Rightarrow y\dfrac{dv}{dy}=\dfrac{ve^v-e^v}{1+e^v}-v
+     \] </p><br>
 
+     <p>\[ \Rightarrow y\dfrac{dv}{dy}=\dfrac{ve^v-e^v-v-ve^v}{1+e^v}
+     \] </p><br>
+     <p>\[ \Rightarrow y\dfrac{dv}{dy}=\dfrac{-(v+e^v)}{(1+e^v)}
+     \] </p><br>
+     <p>\[ \Rightarrow \dfrac{(1+e^v)}{(v+e^v)}dv=-\dfrac{dy}{y}
+     \] </p><br>
+     <p style="display: inline">Integrating both sides, we get
+     </p><br>
 
-     <p>\[  \] </p><br>
-     <p>\[  \] </p><br>
-     <p>\[  \] </p><br>
-     <p>\[  \] </p><br>
-     <p>\[  \] </p><br>
-     <p>\[  \] </p><br>
-     <p>\[  \] </p><br>
-
-     <p>\[  \] </p>
-     <p>\[  \] </p>
-     <p>\[  \] </p>
+     <p>\[ \int \dfrac{(1+e^v)}{(v+e^v)}dv=-\int \dfrac{dy}{y}
+     \] </p> <p style="display: inline">------ ( 2 )</p><br>
+     <p style="display: inline">Let </p> <p>\[ I=\int\dfrac{(1+e^v)}{(v+e^v)}dv
+     \] </p><br>
+     <p style="display: inline">Put </p><p>\[ v+e^v=t
+     \] </p><br>
+     <p>\[      (1+e^v)dv=dt
+     \] </p><br>
+     <p style="display: inline">So, </p><p>\[      I=\int\dfrac{dt}{t}=\log\,t=\log\,(v+e^v)
+     \] </p><br>
+     <p style="display: inline">So, from ( 2 ), we get
+     </p><br>
+     <p>\[      \log(v+e^v)=-\log\,y+\log\,C
+     \] </p><br>
+     <p>\[      \Rightarrow \log\left(\dfrac{x}{y}+e^{\dfrac{x}{y}}\right)+\log\,y=\log\,C
+     \] </p><br>
+     <p>\[      \Rightarrow \log\left[y\left(\dfrac{x}{y}+e^{\dfrac{x}{y}}\right)\right]=\log\,C
+     \] </p><br>
+     <p>\[      \Rightarrow y\left(\dfrac{x}{y}+e^{\dfrac{x}{y}}\right)=C
+     \] </p><br>     
+     <p>\[      \Rightarrow x+ye^{\dfrac{x}{y}}=C
+     \] </p>
      
      
    </ul>
